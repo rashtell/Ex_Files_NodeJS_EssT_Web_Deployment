@@ -1,0 +1,26 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "cowsay \"running tests don't panic\"",
+    "test": "jest --coverage",
+    "start": "clear; open http://localhost:3000 & nodemon ./src",
+    "dev:coverage": "open ./coverage/lcov-report/index.html",
+    "dev:test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "cowsay": "^1.4.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11",
+    "supertest": "^4.0.2"
+  }
+}
